@@ -5,3 +5,4 @@ A collection of daily internship projects built using HTML, CSS, and JavaScript.
 
 - [Todo List](./Todo%20List/)
 - [Skill Swap](./Skill%20Swap/)
+- [Guildford Dental Clinic](./Guildford%20Dental%20Clinic/)
