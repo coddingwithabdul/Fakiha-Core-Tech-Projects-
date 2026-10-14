@@ -1,0 +1,600 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #067467;
+}
+
+.menu-img {
+    display: none;
+    font-size: 24px;
+}
+
+/* Home / Hero Section */
+#hero {
+    min-height: 80vh;
+    margin: 100px auto;
+    padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero .main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#hero .main-hero>p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.light-blue {
+    color: rgb(15, 172, 193);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button .btn {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(15, 172, 193);
+    border-radius: 10px; 
+    padding: 20px 40px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+/* Popular places  */
+.places-text {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.card-container {
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.cards {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.cards img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.cards h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cards p {
+    line-height: 1.6;
+    color: #555;
+}
+/* Destination */
+
+#destination {
+    width: 85%;
+    margin: 100px auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.left-destination img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.left-destination img:hover {
+    transform: scale(1.05);
+}
+.right-destination {
+    margin: 10px;
+    padding: 20px;
+    display: flex;  
+    flex-direction: column;
+    gap: 15px;
+}
+.destination-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.progress-bar {
+    text-align: center;
+}
+
+.progress-bar h2 {
+    font-size: 30px;
+    color: #0f6574;
+}
+
+.progress-bar p {
+    font-size: 15px;
+}
+
+/* Gallery */
+.gallery-text{
+     margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.galley-img{
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.galley-img img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galley-img img:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* Contact us  */
+#contact {
+    background-color: #fff;
+}
+.contact-container {
+    width: 85%;
+    margin: 0px auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.left-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-contact h1 {
+    font-size: 50px;
+    color: #123b66;
+    margin-bottom: 20px;
+}
+
+.left-contact > p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.right-contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.right-contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-contact form label {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.right-contact form input,
+.right-contact form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+.right-contact form input:focus,
+.right-contact form textarea:focus {
+    border-color: #067467;
+}
+
+.right-contact form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-button {
+    background-color: #067467;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #045a4f;
+}
+/* footer */
+footer {
+    color: #ffffff;
+    text-align: center;
+    background-color:#045a4f;
+    padding: 30px;
+}
+
+footer p {
+    font-size: 15px;
+} 
+
+
+/* TABLET RESPONSIVE */
+@media (max-width: 900px) {
+    header {
+        padding: 15px 4%;
+    }
+
+    .card-container,
+    .galley-img {
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #destination,
+    .contact-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .left-destination img {
+        width: 100%;
+        height: auto;
+    }
+
+    .galley-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+/* MOBILE NAVBAR */
+@media (max-width: 768px) {
+    body {
+        padding-top: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 5%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    header .logo img {
+        width: 80px;
+    }
+
+    /* Hamburger icon */
+    .menu-img {
+        display: block;
+        cursor: pointer;
+        font-size: 26px;
+        color: #045a4f;
+    }
+
+    /* Hide links by default */
+    header nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background: white;
+        padding: 15px;
+        margin: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        list-style: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+        z-index: 1001;
+    }
+
+    /* Show menu when JavaScript adds this class */
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+        display: block;
+        text-decoration: none;
+    }
+
+    /* Hero */
+    #hero {
+        margin: 0 auto 40px;
+        min-height: 60vh;
+        padding: 60px 20px;
+        box-sizing: border-box;
+    }
+
+    #hero h1 {
+        font-size: clamp(28px, 6vw, 36px);
+        line-height: 1.3;
+    }
+
+    #hero p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .button .btn {
+        display: inline-block;
+        padding: 14px 24px;
+    }
+
+    /* Popular places */
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cards {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cards img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* Destination */
+    #destination {
+        margin: 50px auto;
+        padding: 20px 0;
+        gap: 25px;
+    }
+
+    .left-destination img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .right-destination {
+        margin: 0;
+        padding: 0;
+    }
+
+    .destination-text h1 {
+        font-size: 28px;
+    }
+
+    .progress {
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .progress-bar {
+        flex: 1 1 100px;
+        min-width: 0;
+    }
+
+    /* Gallery */
+    .galley-img {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .galley-img img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    /* Contact */
+    .contact-container {
+        padding: 45px 0;
+        gap: 25px;
+    }
+
+    .left-contact h1 {
+        font-size: 32px;
+    }
+
+    .right-contact input,
+    .right-contact textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 12px;
+    }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+    #hero {
+        padding: 50px 15px;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    .places-text h1,
+    .gallery-text h1 {
+        font-size: 26px;
+    }
+
+    .card-container,
+    .galley-img {
+        width: 92%;
+    }
+
+    .cards h1 {
+        font-size: 23px;
+    }
+
+    .galley-img img {
+        height: 210px;
+    }
+
+    .left-contact h1 {
+        font-size: 28px;
+    }
+}
