@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Changer Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color Changer</h1>
+      <p>Choose a color and change your background!</p>
+      <div class="color-button">
+        <button class="red" onclick="changeColor('red')">Red</button>
+        <button class="green" onclick="changeColor('green')">Green</button>
+        <button class="blue" onclick="changeColor('blue')">Blue</button> 
+        <button class="brown" onclick="changeColor('brown')">Brown</button>
+        <button class="orangered" onclick="changeColor('orangered')">Orangered</button>
+      </div>
+      <div class="extra-button">
+        <button class="random-color" onclick="randomColor()">Random Color</button>
+        <button class="reset" onclick="resetColor()">Reset Color</button>
+      </div>
+      <h3>Color Name : <span id="colorName">White</span></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

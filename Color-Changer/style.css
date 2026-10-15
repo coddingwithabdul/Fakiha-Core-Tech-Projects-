@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: blueviolet;
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height:30px;
+}
+.container { 
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    background: #fff;
+    max-width: 500px;
+    width: 100%; 
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+h1 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+}
+p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.color-button{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.color-button button{
+    padding: 10px 40px;
+    border-radius: 10px;
+     color: #fff;
+    border: none;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.brown {
+    background-color: brown;
+}
+.orangered {
+    background-color: orangered;
+}
+
+.extra-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px
+}
+.extra-button button{
+     padding: 10px 40px;
+    border-radius: 10px;
+     color: #fff;
+    border: none;
+}
+
+.random-color{
+    background-color: #7c3aed;
+}
+
+.reset {
+    background-color: #333;
+}
+h3 {
+    color: #333;
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+#colorName {
+    color: #7c3aed;
+}
+
