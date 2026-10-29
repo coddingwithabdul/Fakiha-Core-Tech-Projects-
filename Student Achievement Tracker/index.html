@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Achievement Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h2>Student Tracker</h2>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <h1>Track Your Achievements</h1>
+      <p>Record your academic achievements and keep track of your progress.</p>
+      <a href="#add-achievement" class="btn">Get Started</a>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Total Achievements</h3>
+        <h2 id="totalCount">0</h2>
+      </div>
+      <div class="stat-card">
+        <h3>Completed Achievements</h3>
+        <h2 id="completedCount">0</h2>
+      </div>
+    </section>
+
+    <!-- Add Achievement Form -->
+    <section class="form-section" id="add-achievement">
+      <h2>Add New Achievement</h2>
+      <form id="achievementForm">
+        <label for="title">Achievement Title</label>
+        <input type="text" id="title" placeholder="Enter achievement title" required/>
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option value="Academic">Academic</option>
+          <option value="Technical">Technical</option>
+          <option value="Personal">Personal</option>
+          <option value="Competition">Competition</option>
+          <option value="Certification">Certification</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required />
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Enter description" rows="4" required></textarea>
+        <button type="submit" class="btn">Add Achievement</button>
+      </form>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements-section" id="achievements">
+      <h2>My Achievements</h2>
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search achievement..." />
+        <select id="filterCategory">
+          <option value="All">All Categories</option>
+          <option value="Academic">Academic</option>
+          <option value="Technical">Technical</option>
+          <option value="Personal">Personal</option>
+          <option value="Competition">Competition</option>
+          <option value="Certification">Certification</option>
+        </select>
+      </div>
+      <div class="achievement-grid" id="achievementList"></div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <h2>About This Project</h2>
+      <p> Student Achievement Tracker helps students record and manage their academic achievements easily.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Student Achievement Tracker | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
